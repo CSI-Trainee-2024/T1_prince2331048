@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetYatari</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><span>Jet</span>Yatati</p>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#">HOME</a></li>
+                
+                <li><a href="#" onclick="showSection('destination')">DESTINATION</a></li>
+                <li><a href="#" onclick="showSection('package')">PACKAGE</a></li>
+                <li><a href="#" onclick="showSection('blog')">BLOG</a></li>
+                <li><a href="#" onclick="showSection('contact')">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button><a href="login.html">LogIn</a></button>
+        <button><a href="#">SignUp</a></button>
+        <button><a href="booknow.html">BOOK NOW</a></button>
+    </header>
+    <section >
+    <div class="explore">
+        <h1>WELLCOME TO OUR TRAVEL AGENCY SITE</h1>
+    </div>
+    <section id="home" >
+        <h1>DETAIL DESCRIPTION OF OUR SITE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto possimus nemo praesentium aperiam eaque, dolore voluptate rerum quae impedit eius vero suscipit excepturi eveniet totam perferendis laudantium sint tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto possimus nemo praesentium aperiam eaque, dolore voluptate rerum quae impedit eius vero suscipit excepturi eveniet totam perferendis laudantium sint tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto possimus nemo praesentium aperiam eaque, dolore voluptate rerum quae impedit eius vero suscipit excepturi eveniet totam perferendis laudantium sint tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto possimus nemo praesentium aperiam eaque, dolore voluptate rerum quae impedit eius vero suscipit excepturi eveniet totam perferendis laudantium sint tenetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto possimus nemo praesentium aperiam eaque, dolore voluptate rerum quae impedit eius vero suscipit excepturi eveniet totam perferendis laudantium sint tenetur?</p>
+    </section></section>
+
+    <section id="destination" style="display: none;">
+        <div class="card-container">
+            <div class="card">
+                
+            <img src="3.jpg" >
+            <p>MANALI </p>
+            <p>Rs1700</p>
+            </div>
+            <div class="card">
+                
+            <img src="2.jpg" alt="PARIS">
+            <p>PARIS </p>
+            <p>Rs1700</p>
+            </div>
+            <div class="card">
+                <img src="4.jpg" alt="Description 1">
+                <p>UTTRAKHAND </p>
+            <p>Rs1700</p>
+
+                </div>
+            <div class="card">
+                <img src="6.jpeg" alt="Description 1">
+                <p>EUROPE</p>
+            <p>Rs1700</p>
+
+                </div>
+            <div class="card">
+                <img src="5.jpeg" alt="Description 1">
+                <p>FRANCE</p>
+            <p>Rs1700</p>
+
+                </div>
+            <div class="card">
+                <img src="7.jpeg" alt="Description 1">
+                <p>RUSSIA</p>
+            <p>Rs1700</p>
+
+                </div>
+            <div class="card">
+                <img src="8.jpeg" alt="Description 1">
+                <p>NEPAL</p>
+            <p>Rs1700</p>
+
+                </div>
+            <div class="card">
+                <img src="9.jpeg" alt="Description 1">
+                <p>JAPAN</p>
+            <p>Rs1700</p>
+
+                </div>
+            <div class="card">
+                <img src="10.png" alt="Description 1">
+                <p>KORIEA</p>
+            <p>Rs1700</p>
+
+                </div>
+            <div class="card">
+                <img src="11.jpg" alt="Description 1">
+                <p>BANGLORE</p>
+                <p>Rs1700</p>
+
+                </div>
+
+        </div>
+    </section>
+    
+    <section id="package" style="display:none;">Package Content</section>
+    <section id="blog" style="display:none;">Blog Content</section>
+    <section id="contact" style="display:none;">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact Us</h2>
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
